@@ -139,7 +139,7 @@ def __get_random_list_value(list_object):
 if __name__ == '__main__':
     for i in range(10):
         name = random_chinese_name()
-        print(name, pinyin(name), '___', '声母：', pinyin(name, style=Style.INITIALS), '韵母：',
+        print(name, pinyin(name), '___', '声母：', pinyin(name, style=Style.INITIALS,strict=False), '韵母：',
               pinyin(name, style=Style.FINALS))
 
     print("*" * 50)
